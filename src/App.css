@@ -1,0 +1,47 @@
+.myApp {
+  text-align: center;
+  display: flex;
+}
+
+.LeftWindow {
+  border-right: 1px solid black;
+  height: 100 %;
+  width: 30%;
+}
+
+.RightWindow {
+  height: 100vh;
+  width: 70%;
+}
+
+.Top {
+  height: 70vh;
+  border-bottom: 1px solid black;
+}
+.Bottom {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  height: 70px;
+  width: 100px;
+}
+
+a:hover{
+  background-color: rgb(180, 224, 241);
+}
+.title{
+  background-color: rgb(115, 212, 241);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  height: 8vh;
+  margin-bottom: 0;
+
+}
+.laba1{
+  cursor:pointer;
+}
