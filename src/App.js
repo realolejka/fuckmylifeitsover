@@ -20,7 +20,7 @@ class App extends Component {
   }
  
   onChangeHandler=event=>{
-    this.setState({
+    this.setState({ 
       selectedFile: event.target.files[0],
       loaded: 0,
     })
