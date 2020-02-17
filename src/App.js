@@ -13,8 +13,6 @@ class App extends Component {
       this.state = {
         selectedFile: null,
         showFile1: false,
-        
-
       }
    
   }
@@ -44,14 +42,20 @@ onClickHanlder = (e) => {
     <div className="myApp">
       <div className="LeftWindow">
         <p className="title" >Oleg Arsenov IPZ-17-1 ReactJS labs</p>
-        <p className = "laba1" onClick={this.onClickHanlder} id='laba1'>Lab 1</p>
-        <p className = "laba1" onClick={this.onClickHanlder} id='laba2'>L 2</p>
-        <p className = "laba1" /*onClick={this.onClickHanlder}*/>Lab 1</p>
-        <p className = "laba1" /*onClick={this.onClickHanlder}*/>Lab 1</p>
-        <p className = "laba1" /*onClick={this.onClickHanlder}*/>Lab 1</p>
-        <p className = "laba1" /*onClick={this.onClickHanlder}*/>Lab 1</p>
-        <p className = "laba1" /*onClick={this.onClickHanlder}*/>Lab 1</p>
-        <p className = "laba1" /*onClick={this.onClickHanlder}*/>Lab 1</p>
+        <nav id = "links">
+          <div className="nav-link active-link"data-num="0">Лабораторная работа 1</div>
+          <div className="nav-link active-link"data-num="0">Лабораторная работа 2</div>
+          <div className="nav-link active-link"data-num="0">Лабораторная работа 3</div>
+          <div className="nav-link active-link"data-num="0">Лабораторная работа 4</div>
+          <div className="nav-link active-link"data-num="0">Лабораторная работа 5</div>
+          <div className="nav-link active-link"data-num="0">Лабораторная работа 6</div>
+          <div className="nav-link active-link"data-num="0">Лабораторная работа 7</div>
+          <div className="nav-link active-link"data-num="0">Лабораторная работа 8</div>
+          <div className="nav-link active-link"data-num="0">Лабораторная работа 9</div>
+
+
+
+        </nav>
         
 
       </div>
@@ -60,7 +64,7 @@ onClickHanlder = (e) => {
           {showFile1 === true ? <Laba2 /> : ''}
         </div>
         <div className="Bottom">
-          <input name="uploadFile" type="file" onChange={this.onChangeHandler} onClick={this.onClickHandler}/>
+          <input name="uploadFile" type="file" />
         </div>
       </div>
     </div>

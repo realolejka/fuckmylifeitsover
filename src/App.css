@@ -45,3 +45,14 @@ a:hover{
 .laba1{
   cursor:pointer;
 }
+nav{
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  
+}
+nav > div{
+  margin: 10px;
+  padding: 8px 20px;
+  cursor: pointer;
+}
