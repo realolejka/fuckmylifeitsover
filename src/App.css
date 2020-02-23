@@ -33,6 +33,7 @@ a:hover{
   background-color: rgb(180, 224, 241);
 }
 .title{
+  cursor: pointer;
   background-color: rgb(115, 212, 241);
   display: flex;
   justify-content: center;
@@ -56,3 +57,39 @@ nav > div{
   padding: 8px 20px;
   cursor: pointer;
 }
+
+header{
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+main{
+  display: flex;
+}
+aside{
+  background-color: #EEE;
+  margin: 0 20px;
+  padding: 10px;
+}
+nav{
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+nav > div{
+  /*border: 1px solid black;*/
+  margin: 2px;
+  padding: 8px 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.content{
+  display: none;
+}
+.active-content{
+  display: block !important;
+}
+/*.active-link{
+  color: green;
+  font-weight: bold;
+}*/
