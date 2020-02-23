@@ -41,7 +41,7 @@ class App extends Component {
     const{data} = this.state
     const{showContent} = !this.state.showContent
     if (showContent === false){
-      return "";
+      return " фывфыв";
     }
     
     
@@ -82,11 +82,12 @@ class App extends Component {
         </nav>
 
       </div>
+      
       <div className="RightWindow">
         <div className="Top">
         
         {this.renderSwitch() }
-          
+        {showContent? true :""}  
         
        
         </div>
