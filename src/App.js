@@ -15,11 +15,14 @@ class App extends Component {
     super(props);
      this.state ={
        showContent: false,
-       counter: 0
+       counter: 0,
+       data: null
+
      }
-     this.counterContent = this.counterContent.bind(this)
+    
      this.toggleContent  = this.toggleContent.bind(this)
-     this.setCounter0 = this.setCounter0.bind(this)
+     
+     this.passData = this.passData.bind(this)
   }
  
   toggleContent (event){
@@ -28,33 +31,24 @@ class App extends Component {
       showContent: !this.state.showContent
     })
 
-  }  
+  } 
 
-
-
-  counterContent(event){
-    event.preventDefault()
-    
-    this.setState({
-      counter: this.state.counter +1 
-    })
-  }
   
-  setCounter0(event){
+  passData(event){
     event.preventDefault()
+    const {showContent} = this.state;
     this.setState({
-      counter: this.state.counter == 0
+      data: event.target.attributes.data_num.value,
+      showContent: !showContent
     })
-  }
-  passParametr(data_num){
-    
+
   }
   
 
   render(){
-    const {showContent} = this.state;
-    const {counter} = this.state;
     
+    const {counter} = this.state;
+    const {data, showContent} = this.state;
     
     
   return (
@@ -63,7 +57,7 @@ class App extends Component {
         <p className="title " onClick={this.setCounter0} >Oleg Arsenov IPZ-17-1 ReactJS labs</p>
         <nav id = "links">
           <div className="nav-link active-link" data_num="1" >Лабораторная работа 1 </div>
-          <div className="nav-link active-link" data_num="2" onClick={this.toggleContent}>Лабораторная работа 2 </div>
+          <div className="nav-link active-link" data_num="2" onClick={this.passData}>Лабораторная работа 2 </div>
           <div className="nav-link active-link" data_num="3" onClick={this.counterContent}>Лабораторная работа 3</div>
           <div className="nav-link active-link" data_num="4" onClick={this.counterContent}>Лабораторная работа 4</div>
           <div className="nav-link active-link" data_num="5">Лабораторная работа 5</div>
@@ -77,9 +71,21 @@ class App extends Component {
       <div className="RightWindow">
         <div className="Top">
         
-        {counter === 3 ? <Laba2 />:""}
-        {counter === 4 ? <Laba4 />:""}
-
+        {
+          if (showContent) {
+            switch (key) {
+              case value:
+                
+                break;
+            
+              default:
+                break;
+            }
+          } 
+        }
+          
+        
+          
         
        
         </div>

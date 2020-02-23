@@ -43,9 +43,8 @@ a:hover{
   margin-bottom: 0;
 
 }
-.laba1{
-  cursor:pointer;
-}
+
+
 nav{
   display: flex;
   flex-direction: column;
@@ -75,13 +74,14 @@ nav{
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
+  
 }
 nav > div{
   /*border: 1px solid black;*/
   margin: 2px;
   padding: 8px 20px;
   box-sizing: border-box;
-  cursor: pointer;
+  cursor: 
 }
 .content{
   display: none;
