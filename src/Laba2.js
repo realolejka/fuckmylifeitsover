@@ -1,5 +1,7 @@
 import React  from 'react';
+import  { Component } from 'react';
 
-const Laba2 = (i) => <h1> asdsad </h1>
+class Laba2 extends Component{
 
+}
 export default Laba2;

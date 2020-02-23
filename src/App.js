@@ -71,19 +71,10 @@ class App extends Component {
       <div className="RightWindow">
         <div className="Top">
         
-        {
-          if (showContent) {
-            switch (key) {
-              case value:
-                
-                break;
-            
-              default:
-                break;
-            }
-          } 
-        }
-          
+        {showContent ? 
+        data === '2' ? <Laba2 />:""
+       
+        :""}
         
           
         
