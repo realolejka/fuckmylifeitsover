@@ -93,3 +93,34 @@ nav > div{
   color: green;
   font-weight: bold;
 }*/
+.init_data{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.laba2{
+  background-color:  rgb(202, 202, 202);
+  width: 100%;
+  height: 70vh;
+  margin-top: -25px;
+}
+label{
+  font-weight: bold;
+  margin: 10px;
+  font-size: 1.5em;
+  
+}
+table{
+  width: 70%;
+  height: 30vh;
+  position: absolute;
+}
+.circle{
+  position: absolute;
+  display: block;
+  margin-left: 40%;
+  margin-right: 50%;
+  
+
+  
+}
