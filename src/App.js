@@ -10,6 +10,7 @@ import Laba3 from './Laba3';
 
 
 
+
 class App extends Component {
 
    constructor(props) {

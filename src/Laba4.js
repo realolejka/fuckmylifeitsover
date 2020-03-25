@@ -1,25 +1,88 @@
-import React  from 'react';
+import React from 'react';
 import { Component } from 'react'
+import './Laba4.css'
+import { Fragment } from 'react'
+class Laba4 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            showlevel2: false,
+            isSwapped: false,
+            
+        }
+       
+    }
 
-class Laba4 extends Component{
 
 
+    showHideonMouseMove = () => {
+        this.setState({
+            showlevel2: !this.state.showlevel2
+        });
+    };
 
-    render(){
+    swapImages = () => {
+        
+        this.setState({
+            isSwapped: !this.state.isSwapped,
+           
+        });
+        
+    };
 
-    
+     
+
+    render() {
+            
+        let c = "";
+        if (this.state.isSwapped) {
+            c = <div className="image-swap"> <div className="image1">
+            <img className="first-image" src="./image/image1.jpg" alt="" />
+        </div>
+        <div className="image2">
+            <img className="second-image" src="./image/image2.png" alt="" />
+        </div>
+        </div>
+        } else {        
+            c = <div className="image-swap">
+                <div className="image2">
+            <img className="second-image" src="./image/image2.png" alt="" />
+        </div>
+                 <div className="image1">
+            <img className="first-image" src="./image/image1.jpg" alt="" />
+        </div>
+        
+        </div>
+
+        }
+
+        return (
+            <React.Fragment>
 
 
-    return(
-            <div className="onmove-menu">
-                <div className="menu-level1">
-                    Menu
+                <div className="menu-container">
+                    <div className="Menu">
+                        <div className="menu-levels" onMouseOver={this.showHideonMouseMove}>
+
+                            Menu
+                     </div>
+                        <div className="menu-levels" >
+                            {this.state.showlevel2 ? "Level2" : " "}
+                        </div>
+                    </div>
+
                 </div>
-                <div className="menu-level2">
-                    Level2
+                <div className="image-container">
+                    {c}
+                    <div className="swap-btn" onClick={this.swapImages}>
+                        Swap Images
+                    </div>
                 </div>
-            </div>
-    );
+            </React.Fragment>
+
+
+
+        );
     }
 }
 

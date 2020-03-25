@@ -1,7 +1,51 @@
-.onmove-menu{
+.menu-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 30vh;
     width: 100%;
+    flex-direction: row;
+    
+}
+.Menu{
+    width: 400px;
+    height: 300px;
+    
+}
+.menu-levels{
+    display: flex;
+    width: auto;
+    font-size: 1.4em;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.image-container{
+    flex-flow: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.image-swap{
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100%;
+}
+
+.swap-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    font-weight: lighter;
+    font-size: 1.4em;
+    background-color: #e0e1e6;
+    color: #888888;
+    outline: 1px solid #888888;
+    cursor: pointer;
 }
